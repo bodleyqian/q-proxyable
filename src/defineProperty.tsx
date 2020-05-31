@@ -6,6 +6,7 @@ import {
   getProxyableTarget,
   addProxyableFlagToTarget,
 } from './utils';
+import { GLOBAL_PROXY_HANDLERS } from './common';
 
 let initedArray = false;
 export function ProxyableByDefineProperty<T extends object>(value: T, option?: IProxyOption<T>): T {
@@ -25,12 +26,14 @@ export function ProxyableByDefineProperty<T extends object>(value: T, option?: I
         configurable: true,
         get() {
           const res = ProxyableByDefineProperty(tempV as any);
+          GLOBAL_PROXY_HANDLERS.get!.forEach((handler) => handler(value, i, res));
           handlers?.get.forEach((handler) => handler(value, i, res));
           return res;
         },
         set(v) {
           const oldV = tempV;
           tempV = ProxyableByDefineProperty(v);
+          GLOBAL_PROXY_HANDLERS.set!.forEach((handler) => handler(value, i, tempV, oldV));
           handlers?.set.forEach((handler) => handler(value, i, tempV, oldV));
         },
       });
