@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:recommended"],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*", "_coverage/**/*"]
+  },
+  "rules": {
+    "member-ordering": false,
+    "member-access": false,
+    "quotemark": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "forin": false,
+    "only-arrow-functions": false,
+    "no-console": false
+  }
+}
