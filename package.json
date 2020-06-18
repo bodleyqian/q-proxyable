@@ -1,53 +1,53 @@
 {
-  "name": "q-proxyable",
-  "version": "1.0.0",
-  "description": "normal utils by qianzhixiang ",
-  "main": "dist/src/index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "publish": "npm publish",
-    "lint": "tslint src/**/*.{ts,tsx}",
-    "precommit": "lint-staged",
-    "prettier:all": "prettier src/**/*.{js,ts,html,less,tsx} --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zxqian1991/q-reactive-react.git"
-  },
-  "keywords": [
-    "util"
-  ],
-  "lint-staged": {
-    "src/**/*.{js,ts,tsx}": [
-      "prettier --write",
-      "tslint",
-      "git add"
-    ]
-  },
-  "author": "qianzhixiang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zxqian1991/q-reactive-react/issues"
-  },
-  "homepage": "https://github.com/zxqian1991/q-reactive-react#readme",
-  "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "husky": "^3.1.0",
-    "jest": "^24.9.0",
-    "lint": "^0.7.0",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
-    "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.0",
-    "ts-jest": "^24.2.0",
-    "tslint": "^5.20.1",
-    "tslint-config-prettier": "^1.18.0",
-    "@types/react": "^16.9.25"
-  },
-  "dependencies": {
-    "events": "^3.1.0",
-    "tslib": "^1.10.0",
-    "typescript": "^3.7.3"
-  }
+	"name": "q-proxyable",
+	"version": "1.0.0",
+	"description": "normal utils by qianzhixiang ",
+	"main": "dist/src/index.js",
+	"scripts": {
+		"test": "jest",
+		"build": "tsc",
+		"publish": "npm publish",
+		"lint": "tslint src/**/*.{ts,tsx}",
+		"precommit": "lint-staged",
+		"prettier:all": "prettier src/**/*.{js,ts,html,less,tsx} --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zxqian1991/q-proxyable.git"
+	},
+	"keywords": [
+		"util"
+	],
+	"lint-staged": {
+		"src/**/*.{js,ts,tsx}": [
+			"prettier --write",
+			"tslint",
+			"git add"
+		]
+	},
+	"author": "qianzhixiang",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/zxqian1991/q-proxyable/issues"
+	},
+	"homepage": "https://github.com/zxqian1991/q-proxyable#readme",
+	"devDependencies": {
+		"@types/jest": "^24.0.23",
+		"husky": "^3.1.0",
+		"jest": "^24.9.0",
+		"lint": "^0.7.0",
+		"lint-staged": "^9.5.0",
+		"prettier": "^1.19.1",
+		"reflect-metadata": "^0.1.13",
+		"rimraf": "^3.0.0",
+		"ts-jest": "^24.2.0",
+		"tslint": "^5.20.1",
+		"tslint-config-prettier": "^1.18.0",
+		"@types/react": "^16.9.25"
+	},
+	"dependencies": {
+		"events": "^3.1.0",
+		"tslib": "^1.10.0",
+		"typescript": "^3.7.3"
+	}
 }
